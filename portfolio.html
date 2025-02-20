@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width-device-width, initial-scale=1.0" />
+    <meta name = "author" content = "Nidhi" />
+    <title>Nidhi Resume</title>
+    <style>
+        main{
+        display: flex;
+        gap: 20px;
+        }
+        .left-column{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        background-color : beige;
+        }
+        .right-column{
+        flex:3;
+        display: flex;
+        flex-direction: column;
+        }
+        .task-1.container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color : lightgray;
+        }
+        header{
+        background-color : darkgray;
+        border: 1px solid black;
+        }
+        footer{
+        border: 1px solid black;
+        background-color : darkgray;
+        text-align: right;
+        }
+        main{
+        border: 1px solid black;
+        flex-grow: 1;
+        background-color : white;
+        }
+        .profile, .Education{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+<!--        gap : 100 px;-->
+        }
+        .contact-info{
+        display: flex;
+        flex-direction: column;
+<!--        align-items:center;-->
+        }
+        .skills-list{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 3px 10px;
+<!--            align-items: center;-->
+        }
+        .skills-list div{
+            font-weight : bold;
+            min-width: 180px;
+            white-space: nowrap;
+        }
+            .skills-list span{
+            white-space: wrap;
+            min-width: 180px;
+        }
+        .Education div{
+            font-weight : bold;
+            white-space: wrap;
+        }
+        h1, h2, h3, h4, h5 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+<div class = "task-1 container">
+    <header class = profile>
+        <div class="contact-info">
+            <a href="https://leetcode.com/u/nidhi1663/" target="_blank">🔗 https://leetcode.com/u/nidhi1663/</a>
+            <a href="https://github.com/1997nidhi/Ecommerce-Website">🔗 https://github.com/1997nidhi/Ecommerce-Website</a>
+        </div>
+        <div>
+            <h1> Nidhi </h1>
+            <h5>Senior Software Engineer</h5>
+        </div>
+        <div class="contact-info">
+            <a href = "tel:+917482012605" >📞 +91-7482012605 </a>
+            <a href = "mailto:nidhiraut1606@gmail.com">✉️ nidhiraut1606@gmail.com</a>
+        </div>
+<!--        <hr class = "solid-line">-->
+    </header>
+    <main>
+        <div class = "left-column">
+            <h3>Skills</h3>
+            <div class="skills-list">
+                <div>Programming Languages:</div>
+                <span>Java</span>
+                <div>Libraries and Frameworks:</div>
+                <span>Hibernate, Spring Boot, JDBC</span>
+                <div>Tools:</div>
+                <span>MySQL, SVN, GIT</span>
+                <div >Other Skills:</div>
+                <span>Microservices, Data structures and Algorithms, Design Patterns </span>
+            </div>
+            <h3>Education</h3>
+            <div class = "Education">
+                <div>Institute of Technical Education and Research, Bhubaneshwar</div>
+                <span>2020</span>
+            </div>
+            <div>B.TECH in EEE | 80%</div>
+            <div class = "Education">
+                <div>CBSE</div>
+                <span>2016</span>
+            </div>
+            <div>AISSCE | 68%</div>
+        </div>
+        <div class="right-column">
+            <h3>Experience</h3>
+            <h4>Backend Engineer</h4>
+            <h5>LTIMindtree</h5>
+            <ul>
+                <li>Led the modernization of mainframe applications to Java-based solutions, reducing technical debt and
+                    streamlining the codebase by 30%.</li>
+                <li>Facilitated the migration of the data access layer from JDBC to Hibernate, enhancing ORM capabilities and
+                    reducing boilerplate code by 25%.</li>
+                <li>Implemented asynchronous functions using multi-threading, boosting query response times by 35% to 45%.</li>
+                <li>Developed server-side pagination, achieving up to 40% faster page loading times for improved user
+                    experience.</li>
+                <li>Created a REST API for data retrieval from a NoSQL database, significantly enhancing application
+                    functionality and performance.</li>
+            </ul>
+            <h3>Projects</h3>
+            <h4>E-Commerce Application | Java, Spring Boot, Spring JPA, MySQL, Microservices</h4>
+            <ul>
+                <li>Developed and integrated over 4 microservices to streamline user management, product cataloging, and
+                    payment processing, resulting in an enhanced user experience.</li>
+                <li>Implemented Pagination which significantly increased the response time upto 50%.</li>
+                <li>Implemented various design patterns to reduce code boilerplate by up to 35%, significantly enhancing code
+                    readability by approximately 75%.</li>
+                <li>Created unit tests using JUnit to validate functionality, achieving 90% test coverage.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <a href="https://drive.google.com/file/d/1Xfynd0TLX2MwkIrjE41WdPiJdmVJ5plz/view?usp=sharing">Download Resume</a>
+        <br>
+        <br>
+    </footer>
+</div>
+</body>
+
+<footer>
+
+</footer>
+</html>
