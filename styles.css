@@ -1,0 +1,92 @@
+.task-1{
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+}
+main{
+    display: flex;
+    gap: 20px;
+    border: 1px solid black;
+    flex: 1 1 0%;
+    background-color : white;
+    flex-direction: row;
+}
+
+.left-column{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    background-color : beige;
+}
+.right-column{
+    flex:3;
+    display: flex;
+    flex-direction: column;
+}
+.right-column h4{
+    color: lightseagreen;
+}
+header{
+    background-color : darkgray;
+    border: 1px solid black;
+}
+footer{
+    border: 1px solid black;
+    background-color : darkgray;
+    text-align: right;
+}
+.profile, .Education{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+}
+.skills-list{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 3px 10px;
+}
+.skills-list div{
+    font-weight : bold;
+    min-width: 180px;
+    white-space: nowrap;
+}
+.skills-list span{
+    white-space: wrap;
+    min-width: 180px;
+}
+.Education {
+    color: green;
+}
+.Education div{
+    font-weight : bold;
+    white-space: wrap;
+}
+h1, h2, h3, h4, h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+@media(max-width: 600px){
+
+    .task-1 {
+        display: flex;
+        flex-direction: column;
+         width: 100%;
+    }
+    main {
+        flex-direction: column;
+        gap: 10px; /* Adjust gap for mobile */
+    }
+    .profile{
+        flex-direction: column;
+    }
+    .skills-list div, .skills-list span {
+            min-width: unset;
+            white-space: normal;
+    }
+}
