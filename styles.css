@@ -14,14 +14,10 @@ main{
 
 .left-column{
     flex:1;
-    display: flex;
-    flex-direction: column;
     background-color : beige;
 }
 .right-column{
     flex:3;
-    display: flex;
-    flex-direction: column;
 }
 .right-column h4{
     color: lightseagreen;
